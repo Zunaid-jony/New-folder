@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>my item</li>
+        <li>Lorem, ipsum.</li>
+        <li>Sequi, ratione!</li>
+        <li onclick="this.innerText='Some one clicked'">Laboriosam, reprehenderit.</li>
+        <li onclick="itemClickHander(event)">Mollitia, a?</li>
+        <li id="lastParson">Laudantium, sunt.</li>
+    </ul> 
+  <script>
+       function itemClickHander(event){
+           console.log(event.target.innerText)
+          
+        }
+      document.getElementById('lastParson').addEventListener('click', itemClickHander);
+  </script>
+    
+</body>
+</html>
